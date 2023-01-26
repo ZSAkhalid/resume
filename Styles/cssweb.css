@@ -116,38 +116,6 @@ header nav a:hover div{
     font-size: 100px;
 }
 
-.EducationSection{
-    height: 970px;
-    background-image: url("/media/Images/Space.webp");
-    background-size: cover;
-    padding-top: 230px;
-}
-.EducationArticle{
-    background-color: #020f1f6b;
-    height: 500px;
-    border-radius: 25px;
-    padding: 5%;
-    padding-left: 10%;
-}
-table{
-    height: 90%;
-    width: 90%;
-}
-table, tbody{
-    color: aliceblue;
-    border-left: 1px solid white;
-}
-th{
-    background-color: #010E1E;
-    border-left: 1px solid white;
-}
-td{
-    background-color: #021e418a;
-    border-left: 1px solid white;
-}
-th, td{
-    padding: 7px;
-}
 
 .brProjects{
     height: 160px;
@@ -302,6 +270,7 @@ footer a{
 footer a:hover{
     color: rgb(139, 176, 255);
     transition: 0.5s;
+    transform: translateY(-10px);
 }
 footer a img{
     height: 25px;
@@ -361,16 +330,18 @@ section article .skillsHeader{
 
 .projectsSection{
     background-image: url("/Media/Images/Nature3.jpg");
-    height: 970px;
+    height: fit-content;
     padding-top: 1%;
+    padding-bottom: 1%;
     background-size: cover;
 }
 .projectsContainer2{
-    height: 470px;
+    height: fit-content;
+    text-align: center;
 }
 .syncerDiv{
-    width: 750px;
-    float: right;
+    width: 710px;
+    margin: 0 auto;
 }
 .syncerDiv .carousel-item{
     padding-left: 65px;
@@ -381,22 +352,22 @@ section article .skillsHeader{
     margin-top: 25%;
 }
 
-.synDiscriptio2{
-    display: inline-block;
+.sDiscriptio2{
+    font-size: x-large;
 }
 
 .gatherInCloneDiv{
-    width: 270px;
+    width: 250px;
     margin: 0 auto;
 }
 
 .gatherInCloneDiv .carousel-item{
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 .gatherInCloneDiv .carousel-control-next, .gatherInCloneDiv .carousel-control-prev{
     height: fit-content;
-    margin-top: 50%;
+    margin-top: 60%;
 }
 .projectsContainer1, .projectsContainer2{
     background-color: #1a1e21ad;
@@ -406,37 +377,100 @@ section article .skillsHeader{
     padding-bottom: 1%;
 }
 .projectsContainer1{
-    height: 430px;
+    height: 390px;
 }
 .gatherInCloneDiv{
     float: right;
 }
 
+.EducationSection{
+    height: 970px;
+    background-image: url("/media/Images/Space.webp");
+    background-size: cover;
+    padding-top: 230px;
+}
+.EducationArticle{
+    background-color: #020f1f;
+    height: fit-content;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    border-radius: 25px;
+}
+
+.educationInfo, .timeLine{
+    display: inline-block;
+}
+
+.educationInfo{
+    width: 90%;
+    height: fit-content;
+    text-align: left;
+}
+.timeLine{
+    width: fit-content;
+    float: left;
+}
+div.line{
+    width: 2px;
+    height: 175px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 0;
+}
+div.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-width: 10px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 0;
+}
+.educationHead{
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: italic;
+}
+.educationParagraph{
+    font-size: x-large;
+}
+.circle span{
+    display: block;
+    color: black;
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+
+
+@media (max-width: 1200px){
+    .educationHead{
+        font-size: xx-large;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .educationParagraph{
+        font-size: 20px;
+    }
+}
+
+
 @media (max-width: 992px){
     header nav a{
         font-size: 25px;
     }
-    .gatherInCloneDiv{
+
+    div.line{
+        width: 2px;
+        height: 210px;
+        background-color: white;
         margin: 0 auto;
+        padding: 0;
     }
-    .syncerDiv{
-        width: 550px;
-        float: right;
-    }
-    .syncerDiv .carousel-control-next, .syncerDiv .carousel-control-prev{
-        height: fit-content;
-        margin-top: 25%;
-    }
-    .gatherInCloneDiv .carousel-control-next, .gatherInCloneDiv .carousel-control-prev{
-        height: fit-content;
-        margin-top: 70%;
-    }
-    .gatherInCloneDiv .carousel-control-next{
-        padding-left: 5%;
-    }
-    .gatherInCloneDiv .carousel-control-prev{
-        padding-right: 5%;
-    }
+
+    
+
 }
 
 @media (max-width: 768px){
@@ -450,34 +484,59 @@ section article .skillsHeader{
         padding-top: 40px;
         font-size: x-large;
     }
-    .gatherInCloneDiv{
-        width: 200px;
-        float: right;
-    }
-    .syncerDiv{
-        width: 310px;
-        float: right;
-    }
-    .projectsContainer1{
-        height: 290px;
-        margin-top: 120px;
-    }
-    .projectsContainer2{
-        height: 220px;
-    }
+
     .scroll{
         width: 70px;
         height: 75px;
         bottom: 80px;
     }
-
-    .syncerDiv .carousel-control-next, .syncerDiv .carousel-control-prev{
-        height: fit-content;
-        margin-top: 15%;
-    }
     .gatherInCloneDiv .carousel-control-next, .gatherInCloneDiv .carousel-control-prev{
         height: fit-content;
         margin-top: 60%;
+    }
+    .giDiscriptio1{
+        font-size: x-large;
+    }
+    .giDiscriptio2{
+        font-size: large;
+    }
+
+    div.line{
+        width: 2px;
+        height: 210px;
+        background-color: white;
+        margin: 0 auto;
+        padding: 0;
+    }
+    div.circle{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border-width: 10px;
+        background-color: white;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .circle span{
+        display: block;
+        color: black;
+        text-align: center;
+        font-size: medium;
+        font-weight: bolder;
+        padding-top: 8px;
+    }
+    .educationHead{
+        margin-top: 3px;
+        font-size: x-large;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .univerHead{
+        margin-top: 30px;
+    }
+    .educationParagraph{
+        font-size: 16px;
     }
     
 }
@@ -509,4 +568,114 @@ section article .skillsHeader{
     height: 75px;
     bottom: 80px;
    }
+   .EducationArticle{
+    padding-top: 5%;
+    padding-bottom: 6%;
+    overflow: auto;
+   }
+   div.line{
+    width: 2px;
+    height: 147px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.educationHead{
+    margin-top: 8px;
+    font-size: medium;
+    font-weight: bold;
+    font-style: italic;
+}
+.univerHead{
+    margin-top: 22px;
+}
+.educationParagraph{
+    font-size: 14px;
+}
+
+}
+@media (max-width: 526px){
+    div.line{
+        width: 2px;
+        height: 178px;
+        background-color: white;
+        margin: 0 auto;
+        padding: 0;
+    }
+    div.circle{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border-width: 10px;
+        background-color: white;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .circle span{
+        display: block;
+        color: black;
+        text-align: center;
+        font-size: x-small;
+        padding-top: 8px;
+    }
+    .univerHead{
+        margin-top: 0px;
+    }
+}
+@media (max-width: 471px){
+    div.line{
+        width: 2px;
+        height: 198px;
+        background-color: white;
+        margin: 0 auto;
+        padding: 0;
+    }
+    div.circle{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border-width: 10px;
+        background-color: white;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .circle span{
+        display: block;
+        color: black;
+        text-align: center;
+        font-size: x-small;
+        padding-top: 8px;
+    }
+    .univerHead{
+        margin-top: 0px;
+    }
+}
+@media (max-width: 419px){
+    div.line{
+        width: 2px;
+        height: 220px;
+        background-color: white;
+        margin: 0 auto;
+        padding: 0;
+    }
+    div.circle{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border-width: 10px;
+        background-color: white;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .circle span{
+        display: block;
+        color: black;
+        text-align: center;
+        font-size: x-small;
+        padding-top: 8px;
+    }
+    .univerHead{
+        margin-top: 0px;
+    }
 }
